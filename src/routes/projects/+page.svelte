@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>projects - Owen Stanley</title>
+</svelte:head>
+
 <h1>projects</h1>
 <p>this is the projects page</p>
 

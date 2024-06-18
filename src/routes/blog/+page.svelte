@@ -1,6 +1,10 @@
-<script>
+<script lang="ts">
 	export let data;
 </script>
+
+<svelte:head>
+	<title>blog - Owen Stanley</title>
+</svelte:head>
 
 <h1>blog</h1>
 <p>this is the blog page</p>
