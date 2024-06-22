@@ -1,3 +1,7 @@
+<script lang="ts">
+	export let data;
+</script>
+
 <svelte:head>
 	<title>projects - Owen Stanley</title>
 </svelte:head>
@@ -6,7 +10,7 @@
 <p>this is the projects page</p>
 
 <ul>
-	<li><a href="/projects/one">project one</a></li>
-	<li><a href="/projects/two">project two</a></li>
-	<li><a href="/projects/three">project three</a></li>
+	{#each data.summaries as { slug, title }}
+		<li><a href="/projects/{slug}">{title}</a></li>
+	{/each}
 </ul>

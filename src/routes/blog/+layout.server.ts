@@ -1,4 +1,4 @@
-import { posts } from './data.js';
+import { posts } from './data.ts';
 
 export const load = () => {
 	return {
