@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import { message } from '$lib/message';
+</script>
+
+<svelte:head>
+	<title>Owen Stanley</title>
+</svelte:head>
+
+<h1>home</h1>
+<p>this is the home page</p>
+<p>this is a message: {message}</p>
