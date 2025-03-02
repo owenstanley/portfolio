@@ -17,12 +17,6 @@
 </footer>
 
 <style>
-    ul {
-        list-style-type: none;
-        display: flex;
-        margin: 0;
-        gap: 1rem;
-    }
     a {
         text-decoration: none;
     }

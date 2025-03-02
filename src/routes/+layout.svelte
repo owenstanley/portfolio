@@ -1,11 +1,14 @@
-<script>
-	import Navbar from "$lib/components/navbar.svelte";
-	import Footer from "$lib/components/footer.svelte";
-	import "$lib/styles/style.css"
+<script lang="ts">
+	import Banner from '$lib/components/Banner.svelte';
+	import Navbar from '$lib/components/Navbar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import '$lib/styles/style.css';
+	import '../app.css';
 </script>
 
-<Navbar></Navbar>
+<Banner />
+<Navbar />
 <main>
 	<slot />
 </main>
-<Footer></Footer>
+<Footer />
