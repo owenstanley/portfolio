@@ -6,11 +6,13 @@
 	<title>blog - Owen Stanley</title>
 </svelte:head>
 
-<h1>blog</h1>
-<p>this is the blog page</p>
+<div class="container-padded">
+	<h1>blog</h1>
+	<p>this is the blog page</p>
 
-<ul>
-	{#each data.summaries as { slug, title }}
-		<li><a href="/blog/{slug}">{title}</a></li>
-	{/each}
-</ul>
+	<ul>
+		{#each data.summaries as { slug, title }}
+			<li><a href="/blog/{slug}">{title}</a></li>
+		{/each}
+	</ul>
+</div>

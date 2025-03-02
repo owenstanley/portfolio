@@ -158,15 +158,16 @@
 				z-index: 2;
 				margin: 0 0 1em 0;
 				border-radius: var(--border-radius);
+				justify-items: center;
 			}
 
 			nav a {
 				text-decoration: none;
 			}
 
-			nav a[aria-current='true'] {
+			/* nav a[aria-current='true'] {
 				border-bottom: 2px solid;
-			}
+			} */
 
 			ul:has(form) {
 				list-style: none;
@@ -256,6 +257,6 @@
 		</style>
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
+		<div id="root-div" style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>

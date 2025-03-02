@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+
+main div {
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
