@@ -1,7 +1,5 @@
 <script lang="ts">
-	import '$lib/styles/style.css';
+	import '$lib/styles/global.css';
 </script>
 
-<div>
-    Banner
-</div>
+<div/>

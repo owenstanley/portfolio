@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@import "$lib/styles/global/custom-props.css";
+@import "$lib/styles/global/fonts.css";
+@import "$lib/styles/global/global-styles.css";
+@import "$lib/styles/global/reset.css";
+
+/* Blocks */
+@import-glob '$lib/styles/blocks/*.css';
+
+/* Compositions */
+@import-glob '$lib/styles/compositions/*.css';
+
+/* Utilities */
+@import-glob '$lib/styles/utilities/*.css';
+
+/* Tailwind utilities */
+@tailwind utilities;

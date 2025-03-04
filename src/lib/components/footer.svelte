@@ -1,5 +1,4 @@
 <script lang="ts">
-	import '$lib/styles/style.css';
 	import { page, navigating } from '$app/stores';
 </script>
 
