@@ -14,15 +14,3 @@
 		{/if}
 	</nav>
 </footer>
-
-<style>
-    a {
-        text-decoration: none;
-    }
-    nav {
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-    }
-</style>
-

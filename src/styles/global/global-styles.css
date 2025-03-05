@@ -1,0 +1,35 @@
+body {
+	font-family: var(--font-jetbrains);
+	background: var(--colour-primary);
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 12vw;
+	padding-right: 12vw;
+}
+
+main {
+	padding-left: 12vw;
+	padding-right: 12vw;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: black
+}
+
+li {
+	list-style: none;
+}
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 12vw;
+	padding-right: 12vw;
+}
