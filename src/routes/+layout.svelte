@@ -7,7 +7,7 @@
 
 <Banner />
 <Navbar />
-<main>
+<main class="flow">
 	<slot />
 </main>
 <Footer />

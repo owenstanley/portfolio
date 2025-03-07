@@ -1,0 +1,8 @@
+.switcher {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 0;
+    gap: 1rem;
+}

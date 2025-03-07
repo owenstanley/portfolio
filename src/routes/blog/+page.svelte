@@ -6,7 +6,7 @@
 	<title>blog - Owen Stanley</title>
 </svelte:head>
 
-<div class="container-padded">
+<div class="">
 	<h1>blog</h1>
 	<p>this is the blog page</p>
 

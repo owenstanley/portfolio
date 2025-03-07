@@ -7,7 +7,7 @@
 	}
 </script>
 
-<header>
+<header class="wrapper">
 	<nav class="items-center flex justify-between w-full">
 		<a class="" href="/" aria-current={$page.url.pathname === '/'} data-sveltekit-preload-code
 			>owen stanley</a

@@ -1,20 +1,26 @@
-@layer theme, base, components, utilities;
-@import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/utilities.css" layer(utilities);
-
 @import '$styles/global/custom-props.css';
 @import '$styles/global/fonts.css';
 @import '$styles/global/global-styles.css';
 @import '$styles/global/reset.css';
 
 /* Blocks */
-@import-glob '$styles/blocks/*.css';
+@import '$styles/blocks/box.css';
+@import '$styles/blocks/button.css';
+@import '$styles/blocks/card.css';
 
 /* Compositions */
-@import-glob '$styles/compositions/*.css';
+@import '$styles/compositions/grid.css';
+@import '$styles/compositions/stack.css';
+@import '$styles/compositions/switcher.css';
 
 /* Utilities */
-@import-glob '$styles/utilities/*.css';
+@import '$styles/utilities/centred.css';
+@import '$styles/utilities/flow.css';
+@import '$styles/utilities/wrapper.css';
+
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
 
 /* Tailwind utilities */
 @tailwind utilities;

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: [],
+	content: ['./src/**/*.{html,js,svelte,ts}'],
 	darkMode: 'class',
 	theme: {
 		colors: {
@@ -11,7 +11,6 @@ module.exports = {
 		},
 		backgroundColor: ({ theme }) => theme('colors')
 	},
-	// Disables Tailwind's reset etc
 	corePlugins: {
 		preflight: false
 	},

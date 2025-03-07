@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { page, navigating } from '$app/stores';
+	import { navigating } from '$app/stores';
 </script>
 
 <footer>
-	<nav class="footer">
+	<nav class="wrapper">
 		<a
 			href="https://github.com/owenstanley"
 			title="View my GitHub!"
@@ -14,3 +14,6 @@
 		{/if}
 	</nav>
 </footer>
+
+<style>
+</style>
