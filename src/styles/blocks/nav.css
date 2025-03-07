@@ -1,0 +1,14 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0%;
+    border: 1px solid black;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0%;
+}

@@ -3,4 +3,10 @@
 	flex-wrap: wrap;
     padding-left: 12vw;
 	padding-right: 12vw;
+    border: 1px solid black;
+}
+.wrapper-centred {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

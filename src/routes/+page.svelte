@@ -8,7 +8,7 @@
 
 <div class="wrapper">
 	<section class="switcher centred | box">
-		<article class="">
+		<article>
 			<h1>Hi, I'm Owen</h1>
 			<p>Middleware Support Analyst</p>
 			<p>Aspiring developer</p>
@@ -24,7 +24,7 @@
 	</section>
 	<section class="box">
 		<nav>
-			<ul class="switcher centred" style="width: 100%">
+			<ul class="switcher switcher-nav | centred">
 				<li><a href="#experience-section">cv</a></li>
 				<li><a href="#projects-section">projects</a></li>
 				<li><a href="#blog-section">blog</a></li>
@@ -67,10 +67,12 @@
 			commodo donec porttitor tempor imperdiet iaculis. Etiam nam malesuada egestas ultricies justo
 			est metus class. Pretium porttitor nullam lectus euismod finibus ornare.
 		</p>
-		<article class="grid switcher">
-			<div class="flow | card card-project ">
-				<!-- svelte-ignore a11y-img-redundant-alt -->
-				<img src="" alt="placeholder image" />
+		<article class="grid switcher | flow">
+			<div class="flow | card card-project">
+				<div class="wrapper-centred">
+					<!-- svelte-ignore a11y-img-redundant-alt -->
+					<img src="" alt="placeholder image" />
+				</div>
 				<h3>SvelteKit web design</h3>
 				<p>
 					Ultrices nisi cubilia sollicitudin lacus sodales nam euismod. Cursus ad eget potenti,
@@ -83,9 +85,11 @@
 					data-sveltekit-preload-code>Click here to view this project in full</a
 				>
 			</div>
-			<div class="flow | card">
-				<!-- svelte-ignore a11y-img-redundant-alt -->
-				<img src="" alt="placeholder image" />
+			<div class="flow | card card-project">
+				<div class="wrapper-centred">
+					<!-- svelte-ignore a11y-img-redundant-alt -->
+					<img src="" alt="placeholder image" />
+				</div>
 				<h3>VST3 Plugins</h3>
 				<p>
 					Ultrices nisi cubilia sollicitudin lacus sodales nam euismod. Cursus ad eget potenti,
@@ -98,9 +102,11 @@
 					data-sveltekit-preload-cod>Click here to view this project in full</a
 				>
 			</div>
-			<div class="flow | card ">
-				<!-- svelte-ignore a11y-img-redundant-alt -->
-				<img src="" alt="placeholder image" />
+			<div class="flow | card card-project">
+				<div class="wrapper-centred">
+					<!-- svelte-ignore a11y-img-redundant-alt -->
+					<img src="" alt="placeholder image" />
+				</div>
 				<h3>REST APIs</h3>
 				<p>
 					Ultrices nisi cubilia sollicitudin lacus sodales nam euismod. Cursus ad eget potenti,
@@ -114,12 +120,14 @@
 				>
 			</div>
 		</article>
-		<a
-			href="/projects"
-			aria-current={$page.url.pathname === '/projects'}
-			data-sveltekit-preload-code
-			class="items-center no-underline">take a look at all my projects here</a
-		>
+		<p class="centred">
+			<a
+				href="/projects"
+				aria-current={$page.url.pathname === '/projects'}
+				data-sveltekit-preload-code
+				class="items-center no-underline">take a look at all my projects here</a
+			>
+		</p>
 	</section>
 	<section class="box" id="blog-section">
 		<h2>recent blog posts</h2>

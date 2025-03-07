@@ -1,3 +1,4 @@
 .stack > * + * {
     margin-block-start: 1.5rem;
+    border: 1px solid black;
   }
