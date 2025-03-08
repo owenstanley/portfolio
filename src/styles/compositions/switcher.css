@@ -5,9 +5,7 @@
 	justify-content: space-around;
 	padding-left: 0;
     gap: 1rem;
-	border: 1px solid black;
 }
-
 .switcher-nav{
 	padding-left: 20%;
 	padding-right: 20%;

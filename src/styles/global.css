@@ -7,6 +7,7 @@
 @import '$styles/blocks/box.css';
 @import '$styles/blocks/button.css';
 @import '$styles/blocks/card.css';
+@import '$styles/blocks/features.css';
 @import '$styles/blocks/nav.css';
 
 /* Compositions */
@@ -17,6 +18,7 @@
 /* Utilities */
 @import '$styles/utilities/centred.css';
 @import '$styles/utilities/flow.css';
+@import '$styles/utilities/region.css';
 @import '$styles/utilities/wrapper.css';
 
 @layer theme, base, components, utilities;

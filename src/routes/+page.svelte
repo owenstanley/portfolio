@@ -7,7 +7,8 @@
 </svelte:head>
 
 <div class="wrapper">
-	<section class="switcher centred | box">
+	<section class="region centred box">
+	<div class="switcher centred | box">
 		<article>
 			<h1>Hi, I'm Owen</h1>
 			<p>Middleware Support Analyst</p>
@@ -17,21 +18,20 @@
 			<!-- svelte-ignore a11y-img-redundant-alt -->
 			<img src="/me-square.png" alt="photo of me" style="width: 30vw" />
 		</article>
-	</section>
-	<section class="box | centred">
-		bio / introduction that spans the full width of main, but that will wrap nicely if the page
-		width is small
-	</section>
-	<section class="box">
-		<nav>
-			<ul class="switcher switcher-nav | centred">
+		</div>
+		<p>
+			bio / introduction that spans the full width of main, but that will wrap nicely if the page
+			width is small
+		</p>
+		<nav class="">
+			<ul class="switcher switcher-nav features centred">
 				<li><a href="#experience-section">cv</a></li>
 				<li><a href="#projects-section">projects</a></li>
 				<li><a href="#blog-section">blog</a></li>
 			</ul>
 		</nav>
 	</section>
-	<section class="box" id="experience-section">
+	<section class="box region features" id="experience-section">
 		<h2>current experience</h2>
 		<p>
 			Lorem ipsum odor amet, consectetuer adipiscing elit. Consectetur viverra aenean; ridiculus
@@ -52,12 +52,12 @@
 			href="/cv"
 			aria-current={$page.url.pathname === '/cv'}
 			data-sveltekit-preload-code
-			class="items-center no-underline"
+			class=""
 		>
 			take a look at my full cv here</a
 		>
 	</section>
-	<section class="box" id="projects-section">
+	<section class="box region features" id="projects-section">
 		<h2>projects</h2>
 		<p>
 			Lorem ipsum odor amet, consectetuer adipiscing elit. Consectetur viverra aenean; ridiculus
@@ -125,11 +125,11 @@
 				href="/projects"
 				aria-current={$page.url.pathname === '/projects'}
 				data-sveltekit-preload-code
-				class="items-center no-underline">take a look at all my projects here</a
+				class="">take a look at all my projects here</a
 			>
 		</p>
 	</section>
-	<section class="box" id="blog-section">
+	<section class="box region features" id="blog-section">
 		<h2>recent blog posts</h2>
 		<p>
 			Lorem ipsum odor amet, consectetuer adipiscing elit. Consectetur viverra aenean; ridiculus
@@ -150,7 +150,7 @@
 			href="/blog"
 			aria-current={$page.url.pathname === '/blog'}
 			data-sveltekit-preload-code
-			class="items-center no-underline">take a look at all my blog posts here</a
+			class="">take a look at all my blog posts here</a
 		>
 	</section>
 	{#if $navigating}

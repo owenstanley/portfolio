@@ -18,7 +18,7 @@
 			>
 		</div>
 		<div class="hidden lg:flex justify-center items-center w-full">
-			<ul class="">
+			<ul class="features">
 				<li>
 					<a
 						href="/about"
