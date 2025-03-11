@@ -7,8 +7,8 @@
 	}
 </script>
 
-<header class="wrapper">
-	<nav class="nav w-full">
+<header class="wrapper nav-sticky">
+	<nav class="nav">
 		<div class="items-center justify-between flex w-full">
 			<a
 				class="items-center no-underline"
@@ -53,9 +53,9 @@
 				</li>
 			</ul>
 		</div>
-		<div class="items-center justify-between flex gap-4 w-full relative">
+		<div class="centred flex gap-4 w-full relative">
 			<div class="flex absolute right-0 gap-4">
-				<li class="gap-4 hidden lg:flex items-center">
+				<li class="gap-4 hidden lg:flex">
 					<a
 						href="https://github.com/owenstanley"
 						title="View my GitHub!"
@@ -106,9 +106,9 @@
 						></a
 					>
 				</li>
-				<button on:click={toggleDarkMode}
-					><svg
-						class="w-6 h-6 text-gray-800 dark:hidden"
+				<button on:click={toggleDarkMode} class="flex">
+					<svg
+						class=" text-gray-800 flex dark:hidden"
 						aria-hidden="true"
 						width="24"
 						height="24"
@@ -122,7 +122,7 @@
 						/>
 					</svg>
 					<svg
-						class="hidden w-6 h-6 text-white-800 dark:flex dark:text-white"
+						class="hidden text-white-800 dark:flex dark:text-white"
 						aria-hidden="true"
 						width="24"
 						height="24"
@@ -136,7 +136,7 @@
 						/>
 					</svg>
 				</button>
-				<div class="flex lg:hidden pr-3">
+				<div class=" lg:hidden">
 					<HamburgerMenu />
 				</div>
 			</div>
