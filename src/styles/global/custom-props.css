@@ -3,4 +3,5 @@
     --colour-secondary: #000;
     --colour-light: #fff;
     --colour-dark: #000;
+    --colour-secondary-opacity: rgba(0, 0, 0, 0.8);
 }

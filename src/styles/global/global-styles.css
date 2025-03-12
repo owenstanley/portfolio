@@ -4,7 +4,6 @@ html {
 
 body {
 	font-family: var(--font-jetbrains);
-	background: var(--colour-primary);
 }
 
 h1,

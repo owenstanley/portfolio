@@ -19,6 +19,7 @@
 @import '$styles/utilities/centred.css';
 @import '$styles/utilities/flow.css';
 @import '$styles/utilities/region.css';
+@import '$styles/utilities/visually-hidden.css';
 @import '$styles/utilities/wrapper.css';
 
 @layer theme, base, components, utilities;

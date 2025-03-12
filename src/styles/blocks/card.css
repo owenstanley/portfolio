@@ -5,10 +5,10 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: lightgray;
+    background-color: rgb(67, 67, 67);
     border-radius: 2vw;
     padding: 1.5rem;
-    border: 1px solid black;
+    color: white
 }
 
 .card img{

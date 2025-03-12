@@ -8,16 +8,16 @@
 
 <div class="wrapper">
 	<section class="region centred box">
-	<div class="switcher centred | box">
-		<article>
-			<h1>Hi, I'm Owen</h1>
-			<p>Middleware Support Analyst</p>
-			<p>Aspiring developer</p>
-		</article>
-		<article class="">
-			<!-- svelte-ignore a11y-img-redundant-alt -->
-			<img src="/me-square.png" alt="photo of me" style="width: 30vw" />
-		</article>
+		<div class="switcher centred | box">
+			<article>
+				<h1>Hi, I'm Owen</h1>
+				<p>Middleware Support Analyst</p>
+				<p>Aspiring developer</p>
+			</article>
+			<article class="">
+				<!-- svelte-ignore a11y-img-redundant-alt -->
+				<img src="/me-square.png" alt="photo of me" style="width: 30vw" />
+			</article>
 		</div>
 		<p>
 			bio / introduction that spans the full width of main, but that will wrap nicely if the page
@@ -48,13 +48,8 @@
 			sapien. Finibus ultrices himenaeos ullamcorper potenti risus pharetra molestie. Risus est
 			sociosqu elit mus ultricies volutpat.
 		</p>
-		<a
-			href="/cv"
-			aria-current={$page.url.pathname === '/cv'}
-			data-sveltekit-preload-code
-			class=""
-		>
-			take a look at my full cv here</a
+		<a href="/cv" aria-current={$page.url.pathname === '/cv'} data-sveltekit-preload-code class="">
+			take a look at my full cv here →</a
 		>
 	</section>
 	<section class="box region features" id="projects-section">
@@ -82,7 +77,7 @@
 				<a
 					href="/projects/svelte-kit"
 					aria-current={$page.url.pathname === '/projects/svelte-kit'}
-					data-sveltekit-preload-code>Click here to view this project in full</a
+					data-sveltekit-preload-code>Click here to view this project in full →</a
 				>
 			</div>
 			<div class="flow | card card-project">
@@ -99,7 +94,7 @@
 				<a
 					href="/projects/vst3-plugin"
 					aria-current={$page.url.pathname === '/projects/vst3-plugin'}
-					data-sveltekit-preload-cod>Click here to view this project in full</a
+					data-sveltekit-preload-cod>Click here to view this project in full →</a
 				>
 			</div>
 			<div class="flow | card card-project">
@@ -116,7 +111,7 @@
 				<a
 					href="/projects/rest-apis"
 					aria-current={$page.url.pathname === '/projects/rest-apis'}
-					data-sveltekit-preload-cod>Click here to view this project in full</a
+					data-sveltekit-preload-cod>Click here to view this project in full →</a
 				>
 			</div>
 		</article>

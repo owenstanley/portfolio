@@ -5,10 +5,32 @@
 	function toggleDarkMode() {
 		window.document.body.classList.toggle('dark-mode');
 	}
+
+	function toggleMenu() {
+		const button = document.getElementById('plus');
+		const menu = document.getElementById('hamburger-menu');
+		if (button) {
+			button.classList.toggle('rotate-45');
+		}
+
+		if (menu) {
+			if (menu.classList.contains('visually-hidden-transition')) {
+				menu.classList.remove('visually-hidden-transition');
+				menu.classList.remove('visually-hidden');
+				menu.classList.add('visually-hidden-visible-transition');
+			} else {
+				menu.classList.remove('visually-hidden-visible-transition');
+				menu.classList.add('visually-hidden-transition');
+				setTimeout(() => {
+					menu.classList.add('visually-hidden');
+				}, 400);
+			}
+		}
+	}
 </script>
 
 <header class="wrapper nav-sticky">
-	<nav class="nav">
+	<nav class="nav nav-header">
 		<div class="items-center justify-between flex w-full">
 			<a
 				class="items-center no-underline"
@@ -17,7 +39,7 @@
 				data-sveltekit-preload-code>owen stanley</a
 			>
 		</div>
-		<div class="hidden lg:flex justify-center items-center w-full">
+		<div class="visually-hidden lg:flex justify-center items-center w-full">
 			<ul class="features">
 				<li>
 					<a
@@ -55,7 +77,7 @@
 		</div>
 		<div class="centred flex gap-4 w-full relative">
 			<div class="flex absolute right-0 gap-4">
-				<li class="gap-4 hidden lg:flex">
+				<li class="gap-4 visually-hidden lg:flex">
 					<a
 						href="https://github.com/owenstanley"
 						title="View my GitHub!"
@@ -106,9 +128,9 @@
 						></a
 					>
 				</li>
-				<button on:click={toggleDarkMode} class="flex">
+				<button on:click={toggleDarkMode} class="button flex">
 					<svg
-						class=" text-gray-800 flex dark:hidden"
+						class=" text-gray-800 flex dark:visually-hidden"
 						aria-hidden="true"
 						width="24"
 						height="24"
@@ -122,7 +144,7 @@
 						/>
 					</svg>
 					<svg
-						class="hidden text-white-800 dark:flex dark:text-white"
+						class="visually-hidden text-white-800 dark:flex dark:text-white"
 						aria-hidden="true"
 						width="24"
 						height="24"
@@ -136,8 +158,25 @@
 						/>
 					</svg>
 				</button>
-				<div class=" lg:hidden">
-					<HamburgerMenu />
+				<div class="flex centred lg:visually-hidden">
+					<button id="hamburger-button" class="button-blank centred flex" on:click={toggleMenu}>
+						<svg
+							id="plus"
+							width="24"
+							height="24"
+							fill="none"
+							stroke-width="1.5"
+							color="#000"
+							style="--darkreader-inline-color:var(--darkreader-text-000000, #e8e6e3)"
+							><path
+								stroke="#000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M.875 12H12m11.125 0H12m0 0V.781M12 12v11.219"
+								style="--darkreader-inline-stroke:var(--darkreader-text-000000, #e8e6e3)"
+							/></svg
+						>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -145,4 +184,12 @@
 			navigating to {$navigating.to?.url.pathname}
 		{/if}
 	</nav>
+	<HamburgerMenu />
 </header>
+
+<style>
+	svg {
+		display: inline-block;
+		transition: all 0.5s;
+	}
+</style>

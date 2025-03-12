@@ -2,8 +2,8 @@
 	import { navigating } from '$app/stores';
 </script>
 
-<footer>
-	<nav class="wrapper">
+<footer class="wrapper">
+	<nav class="nav nav-footer">
 		<a
 			href="https://github.com/owenstanley"
 			title="View my GitHub!"
