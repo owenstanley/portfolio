@@ -7,17 +7,17 @@
 </svelte:head>
 
 <div class="wrapper">
-	<section class="region centred box">
+	<article class="region centred box">
 		<div class="switcher centred | box">
-			<article>
+			<div>
 				<h1>Hi, I'm Owen</h1>
 				<p>Middleware Support Analyst</p>
 				<p>Aspiring developer</p>
-			</article>
-			<article class="">
+			</div>
+			<div class="">
 				<!-- svelte-ignore a11y-img-redundant-alt -->
 				<img src="/me-square.png" alt="photo of me" style="width: 30vw" />
-			</article>
+			</div>
 		</div>
 		<p>
 			bio / introduction that spans the full width of main, but that will wrap nicely if the page
@@ -30,8 +30,8 @@
 				<li><a href="#blog-section">blog</a></li>
 			</ul>
 		</nav>
-	</section>
-	<section class="box region features" id="experience-section">
+	</article>
+	<article class="box region features" id="experience-section">
 		<h2>current experience</h2>
 		<p>
 			Lorem ipsum odor amet, consectetuer adipiscing elit. Consectetur viverra aenean; ridiculus
@@ -51,8 +51,8 @@
 		<a href="/cv" aria-current={$page.url.pathname === '/cv'} data-sveltekit-preload-code class="">
 			take a look at my full cv here →</a
 		>
-	</section>
-	<section class="box region features" id="projects-section">
+	</article>
+	<article class="box region features" id="projects-section">
 		<h2>projects</h2>
 		<p>
 			Lorem ipsum odor amet, consectetuer adipiscing elit. Consectetur viverra aenean; ridiculus
@@ -62,9 +62,9 @@
 			commodo donec porttitor tempor imperdiet iaculis. Etiam nam malesuada egestas ultricies justo
 			est metus class. Pretium porttitor nullam lectus euismod finibus ornare.
 		</p>
-		<article class="grid switcher | flow">
-			<div class="flow | card card-project">
-				<div class="wrapper-centred">
+		<div class="grid switcher | flow">
+			<div class="flow | card">
+				<div class="wrapper centred">
 					<!-- svelte-ignore a11y-img-redundant-alt -->
 					<img src="" alt="placeholder image" />
 				</div>
@@ -80,8 +80,8 @@
 					data-sveltekit-preload-code>Click here to view this project in full →</a
 				>
 			</div>
-			<div class="flow | card card-project">
-				<div class="wrapper-centred">
+			<div class="flow | card">
+				<div class="wrapper centred">
 					<!-- svelte-ignore a11y-img-redundant-alt -->
 					<img src="" alt="placeholder image" />
 				</div>
@@ -97,8 +97,8 @@
 					data-sveltekit-preload-cod>Click here to view this project in full →</a
 				>
 			</div>
-			<div class="flow | card card-project">
-				<div class="wrapper-centred">
+			<div class="flow | card">
+				<div class="wrapper centred">
 					<!-- svelte-ignore a11y-img-redundant-alt -->
 					<img src="" alt="placeholder image" />
 				</div>
@@ -114,7 +114,7 @@
 					data-sveltekit-preload-cod>Click here to view this project in full →</a
 				>
 			</div>
-		</article>
+		</div>
 		<p class="centred">
 			<a
 				href="/projects"
@@ -123,8 +123,8 @@
 				class="">take a look at all my projects here</a
 			>
 		</p>
-	</section>
-	<section class="box region features" id="blog-section">
+	</article>
+	<article class="box region features" id="blog-section">
 		<h2>recent blog posts</h2>
 		<p>
 			Lorem ipsum odor amet, consectetuer adipiscing elit. Consectetur viverra aenean; ridiculus
@@ -147,7 +147,7 @@
 			data-sveltekit-preload-code
 			class="">take a look at all my blog posts here</a
 		>
-	</section>
+	</article>
 	{#if $navigating}
 		navigating to {$navigating.to?.url.pathname}
 	{/if}

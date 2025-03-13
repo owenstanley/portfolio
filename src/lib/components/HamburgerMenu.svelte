@@ -1,35 +1,44 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { toggleMenu } from '$lib/toggleMenu';
 </script>
 
-<div
-	id="hamburger-menu"
-	class="visually-hidden visually-hidden-transition nav nav-hamburger"
->
+<div id="hamburger-menu" class="visually-hidden visually-hidden-transition nav nav-hamburger">
 	<ul class="centred features nav-hamburger-content">
-		<a href="/" aria-current={$page.url.pathname === '/'} data-sveltekit-preload-code class=""
-			>home</a
+		<a
+			href="/"
+			aria-current={$page.url.pathname === '/'}
+			data-sveltekit-preload-code
+			class=""
+			on:click={toggleMenu}>home</a
 		>
 		<a
 			href="/about"
 			aria-current={$page.url.pathname === '/about'}
 			data-sveltekit-preload-code
-			class="">about</a
+			class=""
+			on:click={toggleMenu}>about</a
 		>
 		<a
 			href="/blog"
 			aria-current={$page.url.pathname === '/blog'}
 			data-sveltekit-preload-code
-			class="">blog</a
+			class=""
+			on:click={toggleMenu}>blog</a
 		>
-		<a href="/cv" aria-current={$page.url.pathname === '/cv'} data-sveltekit-preload-code class=""
-			>cv</a
+		<a
+			href="/cv"
+			aria-current={$page.url.pathname === '/cv'}
+			data-sveltekit-preload-code
+			class=""
+			on:click={toggleMenu}>cv</a
 		>
 		<a
 			href="/projects"
 			aria-current={$page.url.pathname === '/projects'}
 			data-sveltekit-preload-code
-			class="">projects</a
+			class=""
+			on:click={toggleMenu}>projects</a
 		>
 	</ul>
 </div>
