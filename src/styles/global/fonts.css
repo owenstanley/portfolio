@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'JetBrains Mono';
+	font-style: normal;
+	src: url('/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+@theme {
+	--font-jetbrains: 'JetBrains Mono', 'serif';
+}

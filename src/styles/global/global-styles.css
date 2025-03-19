@@ -1,0 +1,38 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-jetbrains);
+	background-color: var(--colour-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 1rem;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+a {
+	text-decoration: none;
+	align-items: center;
+}
+
+a:visited {
+	color: black;
+}
+
+li {
+	list-style: none;
+}
+
+svg {
+	display: block;
+}

@@ -1,0 +1,31 @@
+@import '$styles/global/custom-props.css';
+@import '$styles/global/fonts.css';
+@import '$styles/global/global-styles.css';
+@import '$styles/global/reset.css';
+@import '$styles/global/spacing.css';
+
+/* Blocks */
+@import '$styles/blocks/box.css';
+@import '$styles/blocks/button.css';
+@import '$styles/blocks/card.css';
+@import '$styles/blocks/features.css';
+@import '$styles/blocks/nav.css';
+
+/* Compositions */
+@import '$styles/compositions/grid.css';
+@import '$styles/compositions/stack.css';
+@import '$styles/compositions/switcher.css';
+
+/* Utilities */
+@import '$styles/utilities/centred.css';
+@import '$styles/utilities/flow.css';
+@import '$styles/utilities/region.css';
+@import '$styles/utilities/visually-hidden.css';
+@import '$styles/utilities/wrapper.css';
+
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+/* Tailwind utilities */
+@tailwind utilities;

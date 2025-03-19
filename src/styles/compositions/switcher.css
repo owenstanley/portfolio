@@ -1,0 +1,11 @@
+.switcher {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+    gap: 1rem;
+}
+.switcher-nav{
+	padding-left: 20%;
+	padding-right: 20%;
+}

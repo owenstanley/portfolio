@@ -1,0 +1,12 @@
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: clamp(0vw, 6vw, 6rem);
+	padding-right: clamp(0vw, 6vw, 6rem);
+    /* position: relative*/
+}
+
+.wrapper-no-padding {
+    margin-left: auto;
+    margin-right: auto;
+}
