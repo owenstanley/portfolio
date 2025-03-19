@@ -1,0 +1,3 @@
+@theme {
+    --padding-clamp: clamp(0vw, 6vw, 6rem);
+}

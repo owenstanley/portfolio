@@ -2,6 +2,7 @@
 @import '$styles/global/fonts.css';
 @import '$styles/global/global-styles.css';
 @import '$styles/global/reset.css';
+@import '$styles/global/spacing.css';
 
 /* Blocks */
 @import '$styles/blocks/box.css';

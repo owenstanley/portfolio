@@ -9,7 +9,7 @@ module.exports = {
 			light: '#fff',
 			dark: '#000'
 		},
-		backgroundColor: ({ theme }) => theme('colors')
+		backgroundColor: ({ theme }) => theme('colors'),
 	},
 	corePlugins: {
 		preflight: false

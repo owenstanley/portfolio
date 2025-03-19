@@ -6,9 +6,9 @@
 	<title>Owen Stanley</title>
 </svelte:head>
 
-<div class="wrapper">
-	<article class="region centred box">
-		<div class="switcher centred | box">
+<div class="wrapper-no-padding pl-0 pr-0 sm:pl-(--padding-clamp) sm:pr-(--padding-clamp)">
+	<article class="region flow centred">
+		<div class="switcher centred">
 			<div>
 				<h1>Hi, I'm Owen</h1>
 				<p>Middleware Support Analyst</p>
@@ -31,7 +31,7 @@
 			</ul>
 		</nav>
 	</article>
-	<article class="box region features" id="experience-section">
+	<article class="region flow features" id="experience-section">
 		<h2>current experience</h2>
 		<p>
 			Lorem ipsum odor amet, consectetuer adipiscing elit. Consectetur viverra aenean; ridiculus
@@ -52,7 +52,7 @@
 			take a look at my full cv here →</a
 		>
 	</article>
-	<article class="box region features" id="projects-section">
+	<article class="region flow features" id="projects-section">
 		<h2>projects</h2>
 		<p>
 			Lorem ipsum odor amet, consectetuer adipiscing elit. Consectetur viverra aenean; ridiculus
@@ -62,7 +62,7 @@
 			commodo donec porttitor tempor imperdiet iaculis. Etiam nam malesuada egestas ultricies justo
 			est metus class. Pretium porttitor nullam lectus euismod finibus ornare.
 		</p>
-		<div class="grid switcher | flow">
+		<div class="grid switcher">
 			<div class="flow | card">
 				<div class="wrapper centred">
 					<!-- svelte-ignore a11y-img-redundant-alt -->
@@ -124,7 +124,7 @@
 			>
 		</p>
 	</article>
-	<article class="box region features" id="blog-section">
+	<article class="region flow features" id="blog-section">
 		<h2>recent blog posts</h2>
 		<p>
 			Lorem ipsum odor amet, consectetuer adipiscing elit. Consectetur viverra aenean; ridiculus
